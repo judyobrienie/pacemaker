@@ -82,8 +82,8 @@ public class PacemakerAPITest
 
     Activity activity = pacemaker.getActivity(activityId);
     assertEquals (1, activity.route.size());
-    assertEquals(0.0001, locations[0].latitude,  activity.route.get(0).latitude);
-    assertEquals(0.0001, locations[0].longitude, activity.route.get(0).longitude);   
+    assertEquals( locations[0].latitude,  activity.route.get(0).latitude, 0.0001);
+    assertEquals(locations[0].longitude, activity.route.get(0).longitude, 0.0001);   
   } 
   
   

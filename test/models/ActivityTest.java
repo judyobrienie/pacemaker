@@ -12,7 +12,7 @@ public class ActivityTest
   {
     assertEquals ("walk",          test.type);
     assertEquals ("fridge",        test.location);
-    assertEquals (0.0001, 0.001,   test.distance);    
+    assertEquals (0.001,   test.distance, 0.0001);    
   }
 
   @Test
